@@ -10,3 +10,8 @@ item modify entity @s weapon.mainhand minilegends:consume_one
 
 # Revoke advancement so it can trigger again
 advancement revoke @s only minilegends:tomes/use_apollon
+
+# Notification
+tellraw @a {"text":"Apollon, The Ruin has been summoned!","color":"gold","bold":true}
+playsound minecraft:entity.evoker.prepare_summon player @a
+playsound minecraft:entity.item.break player @a
