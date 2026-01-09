@@ -14,21 +14,28 @@
         "D": "minecraft:diamond_block"
     },
     "result": {
-        "id": "minecraft:skeleton_spawn_egg",
+        "id": "minecraft:enchanted_book",
         "components": {
             "minecraft:item_name": {
-                "text": "Apollon Spawn Egg",
+                "text": "Tome of Apollon",
                 "color": "green",
                 "bold": true,
                 "italic": false
             },
             "minecraft:lore": [
                 {
-                    "text": "Summons Apollon, The Ruin",
+                    "text": "Right-click to summon",
+                    "color": "dark_purple",
+                    "italic": true
+                },
+                {
+                    "text": "Apollon, The Ruin",
                     "color": "gray",
                     "italic": false
                 }
             ],
+            "minecraft:rarity": "epic",
+            "minecraft:enchantment_glint_override": true,
             "minecraft:custom_data": {
                 "legendS_egg": true
             },
