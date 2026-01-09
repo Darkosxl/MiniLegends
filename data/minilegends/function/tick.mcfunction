@@ -11,7 +11,7 @@ execute if score #global ml.timer matches 100.. run scoreboard players set #glob
 function minilegends:tick/spawn_eggs
 
 # === BOSS TICK LOGIC ===
-function minilegends:tick/legendZ
-function minilegends:tick/legendS
-# function minilegends:tick/legendC  (TODO)
+function minilegends:tick/legendz
+function minilegends:tick/legends
+# function minilegends:tick/legendc  (TODO)
 function minilegends:tick/debug_items

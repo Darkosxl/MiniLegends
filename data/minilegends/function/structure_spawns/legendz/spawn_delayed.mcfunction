@@ -3,7 +3,7 @@
 # ============================================
 
 # Find the player who triggered this (nearest to the mansion area)
-execute as @a[limit=1,sort=nearest] at @s positioned ~20 ~ ~ run function minilegends:bosses/legendZ
+execute as @a[limit=1,sort=nearest] at @s positioned ~20 ~ ~ run function minilegends:bosses/legendz
 
 # Epic announcement
 tellraw @a [{"text":"[MiniLegends] ","color":"gold"},{"text":"reiN, The Gestalt","color":"white","bold":true},{"text":" has emerged!","color":"red"}]

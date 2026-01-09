@@ -12,4 +12,4 @@ execute at @s positioned ~15 ~ ~ run summon tnt ~ ~1 ~ {fuse:1}
 execute at @s positioned ~15 ~ ~ run summon tnt ~ ~ ~1 {fuse:1}
 
 # Schedule Legend S spawn for 1 second later (after explosion settles)
-schedule function minilegends:structure_spawns/legendS/spawn_delayed 20t
+schedule function minilegends:structure_spawns/legends/spawn_delayed 20t

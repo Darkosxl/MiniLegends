@@ -6,7 +6,7 @@
 advancement revoke @s only minilegends:tomes/use_apollon
 
 # Spawn Apollon at player's position
-execute at @s run function minilegends:bosses/legendS
+execute at @s run function minilegends:bosses/legends
 
 # Remove one tome from player's hand (inline, like working datapack)
 item modify entity @s weapon.mainhand {function:"minecraft:set_count",count:-1,add:true}
