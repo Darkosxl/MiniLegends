@@ -1,37 +1,41 @@
 {
     "type": "minecraft:crafting_shaped",
+    "category": "misc",
     "pattern": [
         "RRR",
         "EZE",
         "SDS"
     ],
     "key": {
-        "R": {
-            "item": "minecraft:rotten_flesh"
-        },
-        "E": {
-            "item": "minecraft:emerald_block"
-        },
-        "Z": {
-            "item": "minecraft:zombie_head"
-        },
-        "S": {
-            "item": "minecraft:diamond_sword"
-        },
-        "D": {
-            "item": "minecraft:diamond_block"
-        }
+        "R": "minecraft:rotten_flesh",
+        "E": "minecraft:emerald_block",
+        "Z": "minecraft:zombie_head",
+        "S": "minecraft:diamond_sword",
+        "D": "minecraft:diamond_block"
     },
     "result": {
         "id": "minecraft:wither_skeleton_spawn_egg",
-        "count": 1,
         "components": {
-            "minecraft:custom_name": "{\"text\":\"Legend Z Spawn Egg\",\"color\":\"white\",\"italic\":false,\"bold\":true}",
+            "minecraft:item_name": {
+                "text": "Legend Z Spawn Egg",
+                "color": "white",
+                "bold": true,
+                "italic": false
+            },
             "minecraft:lore": [
-                "{\"text\":\"Summons reiN + 10 Mini S\",\"color\":\"gray\",\"italic\":false}"
+                {
+                    "text": "Summons reiN, The Gestalt",
+                    "color": "gray",
+                    "italic": false
+                }
             ],
             "minecraft:custom_data": {
                 "legendZ_egg": true
+            },
+            "minecraft:consumable": {
+                "consume_seconds": 2147483647,
+                "animation": "none",
+                "has_consume_particles": false
             }
         }
     }

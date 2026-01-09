@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "use_egg": {
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                "item": {
+                    "predicates": {
+                        "minecraft:custom_data": "{legendZ_egg:true}"
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "minilegends:eggs/use_legendz"
+    }
+}
