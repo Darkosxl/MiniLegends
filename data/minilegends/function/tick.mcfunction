@@ -13,5 +13,4 @@ function minilegends:tick/spawn_eggs
 # === BOSS TICK LOGIC ===
 function minilegends:tick/legendz
 function minilegends:tick/legends
-# function minilegends:tick/legendc  (TODO)
-function minilegends:tick/debug_items
+function minilegends:tick/legendc
