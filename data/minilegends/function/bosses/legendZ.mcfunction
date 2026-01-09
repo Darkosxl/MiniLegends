@@ -1,11 +1,10 @@
-.
 # ============================================
-# LEGEND Z (reiN) - The Long-Armed
+# LEGEND Z (reiN) - The Gestalt
 # Summons reiN + 10 Mini S companions
 # ============================================
 
-# Summon reiN (Wither Skeleton with Steve head)
-summon wither_skeleton ~ ~ ~ {CustomName:'{"text":"reiN","color":"white","bold":true}',CustomNameVisible:1b,PersistenceRequired:1b,Tags:["miniboss","legendZ","rein"],Health:375f,Attributes:[{Name:"minecraft:max_health",Base:375},{Name:"minecraft:movement_speed",Base:0.3}],HandItems:[{id:"minecraft:netherite_sword",count:1,components:{"minecraft:enchantments":{levels:{"enchantmentplus:entity_reach":40,"minecraft:sharpness":6,"enchantmentplus:lightweight":3}}}},{id:"minecraft:shield",count:1}],ArmorItems:[{id:"minecraft:netherite_boots",count:1,components:{"minecraft:enchantments":{levels:{"minecraft:protection":11,"minecraft:feather_falling":2}}}},{id:"minecraft:netherite_leggings",count:1,components:{"minecraft:enchantments":{levels:{"minecraft:protection":11}}}},{id:"minecraft:netherite_chestplate",count:1,components:{"minecraft:enchantments":{levels:{"minecraft:protection":11,"minecraft:thorns":4,"enchantmentplus:enlarged":2}}}},{id:"minecraft:player_head",count:1,components:{"minecraft:profile":"Steve"}}]}
+# Summon reiN (Wither Skeleton with Steve head) - with loot table
+summon wither_skeleton ~ ~ ~ {CustomName:'{"text":"reiN","color":"white","bold":true}',CustomNameVisible:1b,PersistenceRequired:1b,Tags:["miniboss","legendZ","rein","legend_primary"],Health:375f,Attributes:[{Name:"minecraft:max_health",Base:375},{Name:"minecraft:movement_speed",Base:0.3}],DeathLootTable:"minilegends:legend_drops",HandItems:[{id:"minecraft:netherite_sword",count:1,components:{"minecraft:enchantments":{levels:{"enchantmentplus:entity_reach":40,"minecraft:sharpness":6,"enchantmentplus:lightweight":3}}}},{id:"minecraft:shield",count:1}],ArmorItems:[{id:"minecraft:netherite_boots",count:1,components:{"minecraft:enchantments":{levels:{"minecraft:protection":11,"minecraft:feather_falling":2}}}},{id:"minecraft:netherite_leggings",count:1,components:{"minecraft:enchantments":{levels:{"minecraft:protection":11}}}},{id:"minecraft:netherite_chestplate",count:1,components:{"minecraft:enchantments":{levels:{"minecraft:protection":11,"minecraft:thorns":4,"enchantmentplus:enlarged":2}}}},{id:"minecraft:player_head",count:1,components:{"minecraft:profile":"Steve"}}]}
 
 # Create boss bar for reiN
 bossbar add minilegends:rein {"text":"reiN","color":"white","bold":true}

@@ -1,0 +1,38 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "TTT",
+        "ISI",
+        "BDB"
+    ],
+    "key": {
+        "T": {
+            "item": "minecraft:tnt"
+        },
+        "I": {
+            "item": "minecraft:iron_block"
+        },
+        "S": {
+            "item": "minecraft:skeleton_skull"
+        },
+        "B": {
+            "item": "minecraft:bow"
+        },
+        "D": {
+            "item": "minecraft:diamond_block"
+        }
+    },
+    "result": {
+        "id": "minecraft:skeleton_spawn_egg",
+        "count": 1,
+        "components": {
+            "minecraft:custom_name": "{\"text\":\"Legend S Spawn Egg\",\"color\":\"green\",\"italic\":false,\"bold\":true}",
+            "minecraft:lore": [
+                "{\"text\":\"Summons 2 Legend S bosses\",\"color\":\"gray\",\"italic\":false}"
+            ],
+            "minecraft:custom_data": {
+                "legendS_egg": true
+            }
+        }
+    }
+}

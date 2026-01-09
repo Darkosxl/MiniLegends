@@ -1,0 +1,38 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "RRR",
+        "EZE",
+        "SDS"
+    ],
+    "key": {
+        "R": {
+            "item": "minecraft:rotten_flesh"
+        },
+        "E": {
+            "item": "minecraft:emerald_block"
+        },
+        "Z": {
+            "item": "minecraft:zombie_head"
+        },
+        "S": {
+            "item": "minecraft:diamond_sword"
+        },
+        "D": {
+            "item": "minecraft:diamond_block"
+        }
+    },
+    "result": {
+        "id": "minecraft:wither_skeleton_spawn_egg",
+        "count": 1,
+        "components": {
+            "minecraft:custom_name": "{\"text\":\"Legend Z Spawn Egg\",\"color\":\"white\",\"italic\":false,\"bold\":true}",
+            "minecraft:lore": [
+                "{\"text\":\"Summons reiN + 10 Mini S\",\"color\":\"gray\",\"italic\":false}"
+            ],
+            "minecraft:custom_data": {
+                "legendZ_egg": true
+            }
+        }
+    }
+}
