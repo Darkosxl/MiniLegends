@@ -81,4 +81,4 @@ summon tnt ~-4 ~-1 ~ {fuse:4}
 summon tnt ~ ~-1 ~4 {fuse:4}
 summon tnt ~ ~-1 ~-4 {fuse:4}
 # Spawn fizzling aftershock TNT after 10 seconds (200 ticks)
-schedule function minilegends:tick/legendc_aftershock 110t
+schedule function minilegends:tick/legendc_aftershock 153t
