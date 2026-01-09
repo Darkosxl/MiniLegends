@@ -14,13 +14,12 @@
         "D": "minecraft:diamond_block"
     },
     "result": {
-        "id": "minecraft:enchanted_book",
+        "id": "minecraft:book",
         "components": {
             "minecraft:item_name": {
                 "text": "Tome of Apollon",
                 "color": "green",
-                "bold": true,
-                "italic": false
+                "bold": true
             },
             "minecraft:lore": [
                 {

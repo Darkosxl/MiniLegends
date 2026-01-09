@@ -1,6 +1,6 @@
 {
     "criteria": {
-        "use_egg": {
+        "requirement": {
             "trigger": "minecraft:using_item",
             "conditions": {
                 "item": {
