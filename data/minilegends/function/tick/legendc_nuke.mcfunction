@@ -1,14 +1,25 @@
 # ============================================
 # LEGEND C NUKE - Massive wide explosion + aftershocks
+# Runs at the exact location where Frigis exploded
 # ============================================
 
 # Warning
-tellraw @a [{"text":"[MiniLegends] ","color":"gold"},{"text":"NUCLEAR DETONATION!","color":"red","bold":true}]
+tellraw @a [{"text":"[MiniLegends] ","color":"gold"},{"text":"NUCLEAR SWARM!","color":"red","bold":true}]
 playsound minecraft:entity.generic.explode master @a ~ ~ ~ 2 0.5
 
 # Spawn 50 TNT in a WIDE horizontal pattern (instant to delayed fuses)
 # Layer 0 (ground level) - center
 summon tnt ~ ~ ~ {fuse:0}
+# Layer 0 - ring 1 (radius 2)
+summon tnt ~ ~ ~ {fuse:1}
+summon tnt ~2 ~ ~ {fuse:1}
+summon tnt ~-2 ~ ~ {fuse:1}
+summon tnt ~ ~ ~2 {fuse:1}
+summon tnt ~ ~ ~-2 {fuse:1}
+summon tnt ~1 ~ ~1 {fuse:1}
+summon tnt ~-1 ~ ~1 {fuse:1}
+summon tnt ~1 ~ ~-1 {fuse:1}
+summon tnt ~-1 ~ ~-1 {fuse:1}
 # Layer 0 - ring 1 (radius 2)
 summon tnt ~2 ~ ~ {fuse:1}
 summon tnt ~-2 ~ ~ {fuse:1}
@@ -59,6 +70,15 @@ summon tnt ~4 ~-1 ~ {fuse:3}
 summon tnt ~-4 ~-1 ~ {fuse:3}
 summon tnt ~ ~-1 ~4 {fuse:3}
 summon tnt ~ ~-1 ~-4 {fuse:3}
-
-# Spawn fizzling aftershock TNT (longer fuses for continued explosions)
-schedule function minilegends:tick/legendc_aftershock 40t
+#layer -2
+summon tnt ~ ~-1 ~ {fuse:4}
+summon tnt ~2 ~-1 ~ {fuse:4}
+summon tnt ~-2 ~-1 ~ {fuse:4}
+summon tnt ~ ~-1 ~2 {fuse:4}
+summon tnt ~ ~-1 ~-2 {fuse:4}
+summon tnt ~4 ~-1 ~ {fuse:4}
+summon tnt ~-4 ~-1 ~ {fuse:4}
+summon tnt ~ ~-1 ~4 {fuse:4}
+summon tnt ~ ~-1 ~-4 {fuse:4}
+# Spawn fizzling aftershock TNT after 10 seconds (200 ticks)
+schedule function minilegends:tick/legendc_aftershock 200t
