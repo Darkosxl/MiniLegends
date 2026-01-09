@@ -14,3 +14,4 @@ function minilegends:tick/spawn_eggs
 function minilegends:tick/legendZ
 function minilegends:tick/legendS
 # function minilegends:tick/legendC  (TODO)
+function minilegends:tick/debug_items

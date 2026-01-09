@@ -2,14 +2,14 @@
 # USE TOME OF REIN - Called when advancement triggers
 # ============================================
 
-# Spawn reiN at player's looking position
-execute at @s anchored eyes run function minilegends:bosses/legendZ
-
-# Remove one tome from player's hand
-item modify entity @s weapon.mainhand minilegends:consume_one
-
-# Revoke advancement so it can trigger again
+# Revoke advancement first (so it can trigger again)
 advancement revoke @s only minilegends:tomes/use_rein
+
+# Spawn reiN at player's position
+execute at @s run function minilegends:bosses/legendZ
+
+# Remove one tome from player's hand (inline, like working datapack)
+item modify entity @s weapon.mainhand {function:"minecraft:set_count",count:-1,add:true}
 
 # Notification
 tellraw @a {"text":"reiN, The Gestalt has been summoned!","color":"dark_purple","bold":true}
