@@ -1,6 +1,5 @@
 # ============================================
 # LEGEND S - Tick Logic
-# Called from main tick.mcfunction
 # ============================================
 
 # === BOSS BAR UPDATES ===
@@ -30,6 +29,13 @@ execute at @e[tag=legendS] run fill ~2 ~-3 ~2 ~2 ~ ~2 lava replace air
 # === DEATH DETECTION ===
 execute unless entity @e[tag=legendS1] if bossbar minilegends:legends1 exists run bossbar remove minilegends:legends1
 execute unless entity @e[tag=legendS2] if bossbar minilegends:legends2 exists run bossbar remove minilegends:legends2
-execute unless entity @e[tag=legendS] if score #legendS_was_alive ml.timer matches 1 run title @a title {"text":"Legend S Defeated!","color":"green"}
-execute if entity @e[tag=legendS] run scoreboard players set #legendS_was_alive ml.timer 1
-execute unless entity @e[tag=legendS] run scoreboard players set #legendS_was_alive ml.timer 0
+execute unless entity @e[tag=legendS] if score #legendS_alive ml.timer matches 1 run title @a title {"text":"Legend S Defeated!","color":"green"}
+
+# === XP DROP (40 levels = ~2920 XP) - only once when both dead ===
+execute unless entity @e[tag=legendS] if score #legendS_alive ml.timer matches 1 run summon experience_orb ~ ~ ~ {Value:1000}
+execute unless entity @e[tag=legendS] if score #legendS_alive ml.timer matches 1 run summon experience_orb ~ ~ ~ {Value:1000}
+execute unless entity @e[tag=legendS] if score #legendS_alive ml.timer matches 1 run summon experience_orb ~ ~ ~ {Value:920}
+
+# === ALIVE TRACKING ===
+execute if entity @e[tag=legendS] run scoreboard players set #legendS_alive ml.timer 1
+execute unless entity @e[tag=legendS] run scoreboard players set #legendS_alive ml.timer 0
