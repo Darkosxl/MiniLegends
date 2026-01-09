@@ -1,0 +1,49 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:book",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:item_name": {
+                                    "text": "Tome of Apollon",
+                                    "color": "gold",
+                                    "italic": false
+                                },
+                                "minecraft:lore": [
+                                    {
+                                        "text": "Right-click to summon",
+                                        "color": "gray",
+                                        "italic": true
+                                    },
+                                    {
+                                        "text": "Apollon, The Ruin",
+                                        "color": "gold",
+                                        "italic": false
+                                    }
+                                ],
+                                "minecraft:rarity": "epic",
+                                "minecraft:enchantment_glint_override": true,
+                                "minecraft:custom_data": {
+                                    "MiniLegendsData": {
+                                        "TomeType": "apollon"
+                                    }
+                                },
+                                "minecraft:consumable": {
+                                    "consume_seconds": 2147483647,
+                                    "animation": "none",
+                                    "has_consume_particles": false
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
