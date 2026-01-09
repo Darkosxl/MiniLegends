@@ -20,7 +20,7 @@ scoreboard players operation #legendc_prev ml.timer = #legendc_count ml.timer
 
 # === DEATH DETECTION ===
 execute unless entity @e[tag=legendc] if score #legendc_alive ml.timer matches 1 run bossbar remove minilegends:legendc
-execute unless entity @e[tag=legendc] if score #legendc_alive ml.timer matches 1 run tellraw @a {"text":"Legend C has been defeated!","color":"green","bold":true}
+execute unless entity @e[tag=legendc] if score #legendc_alive ml.timer matches 1 run tellraw @a {"text":"Frigis has been defeated!","color":"green","bold":true}
 
 # === ALIVE TRACKING ===
 execute if entity @e[tag=legendc] run scoreboard players set #legendc_alive ml.timer 1

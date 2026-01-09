@@ -1,0 +1,49 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:book",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:item_name": {
+                                    "text": "Tome of C",
+                                    "color": "yellow",
+                                    "italic": false
+                                },
+                                "minecraft:lore": [
+                                    {
+                                        "text": "Right-click to summon",
+                                        "color": "gray",
+                                        "italic": true
+                                    },
+                                    {
+                                        "text": "Legend C - Nuclear Swarm",
+                                        "color": "yellow",
+                                        "italic": false
+                                    }
+                                ],
+                                "minecraft:rarity": "epic",
+                                "minecraft:enchantment_glint_override": true,
+                                "minecraft:custom_data": {
+                                    "MiniLegendsData": {
+                                        "TomeType": "legendc"
+                                    }
+                                },
+                                "minecraft:consumable": {
+                                    "consume_seconds": 2147483647,
+                                    "animation": "none",
+                                    "has_consume_particles": false
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

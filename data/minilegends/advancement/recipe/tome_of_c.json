@@ -1,0 +1,19 @@
+{
+    "criteria": {
+        "has_creeper_head": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:creeper_head"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "recipes": [
+            "minilegends:tomes/tome_of_c"
+        ]
+    }
+}
