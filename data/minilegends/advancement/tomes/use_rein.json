@@ -5,13 +5,13 @@
             "conditions": {
                 "item": {
                     "predicates": {
-                        "minecraft:custom_data": "{legendS_egg:true}"
+                        "minecraft:custom_data": "{TomeType:\"rein\"}"
                     }
                 }
             }
         }
     },
     "rewards": {
-        "function": "minilegends:eggs/use_legends"
+        "function": "minilegends:tomes/use_rein"
     }
 }

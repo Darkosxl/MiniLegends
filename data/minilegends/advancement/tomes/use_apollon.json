@@ -5,13 +5,13 @@
             "conditions": {
                 "item": {
                     "predicates": {
-                        "minecraft:custom_data": "{legendZ_egg:true}"
+                        "minecraft:custom_data": "{TomeType:\"apollon\"}"
                     }
                 }
             }
         }
     },
     "rewards": {
-        "function": "minilegends:eggs/use_legendz"
+        "function": "minilegends:tomes/use_apollon"
     }
 }
