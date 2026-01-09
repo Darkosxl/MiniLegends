@@ -16,7 +16,10 @@ execute at @e[tag=legendS] as @e[type=arrow,nbt={inGround:1b},distance=..100] at
 execute at @e[tag=legendS] as @e[type=arrow,nbt={inGround:1b},distance=..100] at @s run summon tnt ~ ~ ~-1 {fuse:0}
 execute at @e[tag=legendS] run kill @e[type=arrow,nbt={inGround:1b},distance=..100]
 
-# === LAVA RING (3 blocks deep) ===
+# === MOVING LAVA RING (follows Legend S) ===
+# First: remove lava inside ring (so it moves with boss)
+execute at @e[tag=legendS] run fill ~-2 ~-3 ~-2 ~2 ~ ~2 air replace lava
+# Then: place lava ring at radius 3 (outer edge)
 execute at @e[tag=legendS] run fill ~-3 ~-3 ~ ~-3 ~ ~ lava replace air
 execute at @e[tag=legendS] run fill ~3 ~-3 ~ ~3 ~ ~ lava replace air
 execute at @e[tag=legendS] run fill ~ ~-3 ~-3 ~ ~ ~-3 lava replace air
@@ -29,7 +32,7 @@ execute at @e[tag=legendS] run fill ~2 ~-3 ~2 ~2 ~ ~2 lava replace air
 # === DEATH DETECTION ===
 execute unless entity @e[tag=legendS1] if bossbar minilegends:legends1 exists run bossbar remove minilegends:legends1
 execute unless entity @e[tag=legendS2] if bossbar minilegends:legends2 exists run bossbar remove minilegends:legends2
-execute unless entity @e[tag=legendS] if score #legendS_alive ml.timer matches 1 run title @a title {"text":"Legend S Defeated!","color":"green"}
+execute unless entity @e[tag=legendS] if score #legendS_alive ml.timer matches 1 run title @a title {"text":"Apollon Defeated!","color":"green"}
 
 # === XP DROP (40 levels = ~2920 XP) - only once when both dead ===
 execute unless entity @e[tag=legendS] if score #legendS_alive ml.timer matches 1 run summon experience_orb ~ ~ ~ {Value:1000}
