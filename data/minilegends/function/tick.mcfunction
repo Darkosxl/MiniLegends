@@ -14,3 +14,7 @@ function minilegends:tick/spawn_eggs
 function minilegends:tick/legendz
 function minilegends:tick/legends
 function minilegends:tick/legendc
+function minilegends:tick/legende
+
+# === MYSTERY CHEST DETECTION ===
+function minilegends:tick/mystery_chest

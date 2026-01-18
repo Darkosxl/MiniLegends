@@ -7,3 +7,6 @@ execute as @a at @s if predicate minilegends:near_outpost unless entity @e[tag=l
 
 # Legend C - in desert at night (rare - 1% chance per check)
 execute as @a at @s if predicate minilegends:in_desert unless entity @e[tag=legendc,distance=..500] run function minilegends:structure_spawns/legendc/check
+
+# Mystery Chest - near any structure (5% chance per check)
+execute as @a at @s if predicate minilegends:near_any_structure run function minilegends:structure_spawns/chest/check
