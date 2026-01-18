@@ -16,6 +16,7 @@ function minilegends:tick/legends
 function minilegends:tick/legendc
 function minilegends:tick/legende
 function minilegends:tick/legendk
+function minilegends:tick/legendt
 
 # === MYSTERY CHEST DETECTION ===
 function minilegends:tick/mystery_chest

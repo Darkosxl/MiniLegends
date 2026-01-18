@@ -1,0 +1,35 @@
+{
+    "anvil_cost": 10,
+    "description": {
+        "text": "Sonic X",
+        "color": "dark_aqua",
+        "bold": true
+    },
+    "effects": {
+        "minecraft:post_attack": [
+            {
+                "enchanted": "attacker",
+                "affected": "victim",
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "minilegends:enchantments/sonic_x/boom"
+                }
+            }
+        ]
+    },
+    "max_cost": {
+        "base": 100,
+        "per_level_above_first": 50
+    },
+    "max_level": 1,
+    "min_cost": {
+        "base": 50,
+        "per_level_above_first": 50
+    },
+    "slots": [
+        "mainhand"
+    ],
+    "supported_items": "#minilegends:enchantable/sonic_x",
+    "weight": 0,
+    "primary_items": "#minilegends:enchantable/sonic_x"
+}
