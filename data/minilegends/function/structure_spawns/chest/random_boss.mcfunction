@@ -1,5 +1,6 @@
 # ============================================
 # RANDOM BOSS - Picks and spawns a random boss (1 of 4)
+# Kira is excluded - he has his own special chest
 # ============================================
 
 # Roll 1-4 for random boss selection

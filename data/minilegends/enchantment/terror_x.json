@@ -1,0 +1,57 @@
+{
+    "anvil_cost": 10,
+    "description": {
+        "text": "Terror X",
+        "color": "dark_red",
+        "bold": true
+    },
+    "effects": {
+        "minecraft:hit_block": [
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "minilegends:enchantments/terror_x/explode"
+                },
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "type": "minecraft:arrow"
+                    }
+                }
+            }
+        ],
+        "minecraft:post_attack": [
+            {
+                "enchanted": "attacker",
+                "affected": "victim",
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "minilegends:enchantments/terror_x/explode"
+                },
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "direct_attacker",
+                    "predicate": {
+                        "type": "minecraft:arrow"
+                    }
+                }
+            }
+        ]
+    },
+    "max_cost": {
+        "base": 100,
+        "per_level_above_first": 50
+    },
+    "max_level": 1,
+    "min_cost": {
+        "base": 50,
+        "per_level_above_first": 50
+    },
+    "slots": [
+        "mainhand"
+    ],
+    "supported_items": "#minilegends:enchantable/terror_x",
+    "weight": 0,
+    "primary_items": "#minilegends:enchantable/terror_x"
+}
