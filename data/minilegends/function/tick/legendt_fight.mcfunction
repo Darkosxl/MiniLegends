@@ -31,8 +31,12 @@ execute if score #terror_levitate ml.random matches 800.. run scoreboard players
 execute as @e[tag=legendt] at @s if score #terror_roar ml.random matches 1200.. run function minilegends:tick/legendt_roar
 execute if score #terror_roar ml.random matches 1200.. run scoreboard players set #terror_roar ml.random 0
 
+# === RANDOM TNT RAIN (every 2 seconds = 40 ticks) ===
+execute if score #terror_timer ml.random matches 40 run function minilegends:tick/legendt_tnt
+execute if score #terror_timer ml.random matches 80 run function minilegends:tick/legendt_tnt
+
 # === DARKNESS AURA (every 3 seconds = 60 ticks) ===
-execute as @e[tag=legendt] at @s if score #terror_timer ml.random matches 60 run effect give @a[distance=..50] darkness 5 0 true
+execute as @e[tag=legendt] at @s if score #terror_timer ml.random matches 60 run effect give @a[distance=..50] darkness 2 0 true
 
 # === HEARTBEAT SOUND (every 2 seconds) ===
 execute as @e[tag=legendt] at @s if score #terror_timer ml.random matches 40 run playsound minecraft:entity.warden.heartbeat master @a ~ ~ ~ 2 1
