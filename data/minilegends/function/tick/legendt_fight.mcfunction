@@ -18,6 +18,7 @@ execute unless entity @e[tag=legendt] if score #terror_phase ml.random matches 1
 execute if entity @e[tag=legendt] run scoreboard players add #terror_timer ml.random 1
 execute if entity @e[tag=legendt] run scoreboard players add #terror_levitate ml.random 1
 execute if entity @e[tag=legendt] run scoreboard players add #terror_roar ml.random 1
+execute if entity @e[tag=legendt] run scoreboard players add #terror_dark ml.random 1
 
 # === PERIODIC EXPLOSION (every 6 seconds = 120 ticks) ===
 execute as @e[tag=legendt] at @s if score #terror_timer ml.random matches 120.. run function minilegends:tick/legendt_explode
@@ -35,8 +36,9 @@ execute if score #terror_roar ml.random matches 1200.. run scoreboard players se
 execute if score #terror_timer ml.random matches 40 run function minilegends:tick/legendt_tnt
 execute if score #terror_timer ml.random matches 80 run function minilegends:tick/legendt_tnt
 
-# === DARKNESS AURA (every 3 seconds = 60 ticks) ===
-execute as @e[tag=legendt] at @s if score #terror_timer ml.random matches 60 run effect give @a[distance=..50] darkness 2 0 true
+# === DARKNESS AURA (every 10 seconds = 200 ticks) ===
+execute as @e[tag=legendt] at @s if score #terror_dark ml.random matches 200.. run effect give @a[distance=..50] darkness 2 0 true
+execute if score #terror_dark ml.random matches 200.. run scoreboard players set #terror_dark ml.random 0
 
 # === HEARTBEAT SOUND (every 2 seconds) ===
 execute as @e[tag=legendt] at @s if score #terror_timer ml.random matches 40 run playsound minecraft:entity.warden.heartbeat master @a ~ ~ ~ 2 1
