@@ -10,8 +10,8 @@ tellraw @a [{"text":"[MiniLegends] ","color":"gold"},{"text":"RAID XXI COMPLETE!
 playsound minecraft:ui.toast.challenge_complete master @a 50000 160 50000 2 1
 playsound minecraft:entity.player.levelup master @a 50000 160 50000 2 1
 
-# Spawn reward chest at arena center with Terror X bow
-setblock 50000 156 50000 chest{CustomName:'{"text":"RAID XXI REWARDS","color":"gold","bold":true}',Items:[{Slot:13b,id:"minecraft:bow",count:1,components:{"minecraft:custom_name":'{"text":"Terror X","color":"dark_red","bold":true}',"minecraft:enchantments":{"minilegends:terror_x":1},"minecraft:lore":['{"text":"A weapon of pure destruction","color":"gray","italic":true}','{"text":"Arrows explode on impact","color":"red"}']}}]}
+# Spawn reward chest at arena center with Terror X bow and Kira's Verdict mace
+setblock 50000 156 50000 chest{CustomName:'{"text":"RAID XXI REWARDS","color":"gold","bold":true}',Items:[{Slot:11b,id:"minecraft:bow",count:1,components:{"minecraft:custom_name":'{"text":"Terror X","color":"dark_red","bold":true}',"minecraft:enchantments":{"minilegends:terror_x":1},"minecraft:lore":['{"text":"A weapon of pure destruction","color":"gray","italic":true}','{"text":"Arrows explode on impact","color":"red"}']}},{Slot:15b,id:"minecraft:mace",count:1,components:{"minecraft:custom_name":'{"text":"Kiras Verdict","color":"light_purple","bold":true}',"minecraft:enchantments":{"minecraft:density":15},"minecraft:lore":['{"text":"Fall from the heavens","color":"gray","italic":true}','{"text":"Strike with divine judgment","color":"light_purple"}']}}]}
 
 # Particles at reward chest
 execute positioned 50000 156 50000 run particle minecraft:totem_of_undying ~ ~1 ~ 0.5 0.5 0.5 0.2 100

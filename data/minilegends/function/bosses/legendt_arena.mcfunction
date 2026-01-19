@@ -1,32 +1,44 @@
 # ============================================
-# TERROR ARENA - Creates 80x80 obsidian cube arena
-# Bigger than Kira's arena
-# 5 block thick walls/floor/ceiling
+# TERROR ARENA - Creates 100x100 OPEN TOP arena
+# No ceiling - players can fall to their death!
+# 5 block thick walls/floor only
 # ============================================
 
-# Arena dimensions: 80x80x50 exterior, interior 70x70x40
-# Placed at Y=140 to Y=190
+# Arena dimensions: 100x100 base, no ceiling
+# Floor at Y=140-145, walls go up to Y=200
 
-# First create solid obsidian cube
-fill ~-40 140 ~-40 ~40 190 ~40 obsidian
+# Create the floor (5 blocks thick)
+fill ~-50 140 ~-50 ~50 145 ~50 obsidian
 
-# Then hollow out the interior (leave 5 block thick walls)
-fill ~-35 145 ~-35 ~35 185 ~35 air
+# Create walls (5 blocks thick, up to Y=200)
+# North wall
+fill ~-50 145 ~-50 ~50 200 ~-45 obsidian
+# South wall
+fill ~-50 145 ~45 ~50 200 ~50 obsidian
+# West wall
+fill ~-50 145 ~-45 ~-45 200 ~45 obsidian
+# East wall
+fill ~45 145 ~-45 ~50 200 ~45 obsidian
 
-# Add glowstone lighting in corners and center
-setblock ~-34 146 ~-34 glowstone
-setblock ~34 146 ~-34 glowstone
-setblock ~-34 146 ~34 glowstone
-setblock ~34 146 ~34 glowstone
+# Hollow out interior floor area
+fill ~-45 146 ~-45 ~45 200 ~45 air
+
+# Add glowstone lighting in corners
+setblock ~-44 146 ~-44 glowstone
+setblock ~44 146 ~-44 glowstone
+setblock ~-44 146 ~44 glowstone
+setblock ~44 146 ~44 glowstone
 setblock ~0 146 ~0 glowstone
-setblock ~-34 175 ~-34 glowstone
-setblock ~34 175 ~-34 glowstone
-setblock ~-34 175 ~34 glowstone
-setblock ~34 175 ~34 glowstone
 
 # Sculk decoration (terror theme)
-fill ~-10 145 ~-10 ~10 145 ~10 sculk
+fill ~-15 145 ~-15 ~15 145 ~15 sculk
 setblock ~0 145 ~0 sculk_catalyst
 
 # Center marker
 setblock ~ 145 ~ crying_obsidian
+
+# Add sculk shriekers for ambiance
+setblock ~-20 146 ~-20 sculk_shrieker
+setblock ~20 146 ~-20 sculk_shrieker
+setblock ~-20 146 ~20 sculk_shrieker
+setblock ~20 146 ~20 sculk_shrieker
