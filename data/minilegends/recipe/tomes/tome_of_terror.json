@@ -1,0 +1,50 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "pattern": [
+        "NSN",
+        "SBS",
+        "NSN"
+    ],
+    "key": {
+        "N": "minecraft:netherite_scrap",
+        "S": "minecraft:sculk_catalyst",
+        "B": "minecraft:book"
+    },
+    "result": {
+        "id": "minecraft:book",
+        "components": {
+            "minecraft:item_name": {
+                "text": "Tome of Terror",
+                "color": "dark_red",
+                "italic": false,
+                "bold": true
+            },
+            "minecraft:lore": [
+                {
+                    "text": "Right-click to summon",
+                    "color": "gray",
+                    "italic": true
+                },
+                {
+                    "text": "Darkwarro, TERROR",
+                    "color": "dark_red",
+                    "italic": false,
+                    "bold": true
+                }
+            ],
+            "minecraft:rarity": "epic",
+            "minecraft:enchantment_glint_override": true,
+            "minecraft:custom_data": {
+                "MiniLegendsData": {
+                    "TomeType": "terror"
+                }
+            },
+            "minecraft:consumable": {
+                "consume_seconds": 2147483647,
+                "animation": "none",
+                "has_consume_particles": false
+            }
+        }
+    }
+}

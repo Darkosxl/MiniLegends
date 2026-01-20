@@ -17,7 +17,7 @@ effect give @a darkness 5 0 true
 particle minecraft:sculk_soul -50000 150 -50000 5 3 5 0.1 100
 
 # Summon Darkwarro (4000 HP Warden)
-summon warden -50000 146 -50000 {CustomName:'"Darkwarro, TERROR"',CustomNameVisible:1b,PersistenceRequired:1b,Tags:["legendt","minilegends_boss"],Attributes:[{Name:"minecraft:max_health",Base:4000.0}],Health:4000.0f,ActiveEffects:[{id:"minecraft:fire_resistance",amplifier:0,duration:-1,show_particles:0b}]}
+summon warden -50000 146 -50000 {CustomName:'"Darkwarro, TERROR"',CustomNameVisible:1b,PersistenceRequired:1b,Tags:["legendt","minilegends_boss"],attributes:[{id:"minecraft:max_health",base:4000.0}],Health:4000.0f,active_effects:[{id:"minecraft:fire_resistance",amplifier:0,duration:-1,show_particles:0b}]}
 
 # Set phase to 1 (Darkwarro fight)
 scoreboard players set #terror_phase ml.random 1

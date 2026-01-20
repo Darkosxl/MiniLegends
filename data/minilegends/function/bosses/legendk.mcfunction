@@ -15,7 +15,7 @@ execute positioned 50000 140 50000 run function minilegends:bosses/legendk_arena
 tp @a 50000 156 50000
 
 # Summon the boss at arena center
-summon evoker 50000 156 50000 {CustomName:'"Kira, Player 1"',CustomNameVisible:1b,PersistenceRequired:1b,Tags:["legendk","minilegends_boss"],Attributes:[{Name:"minecraft:max_health",Base:2000.0}],Health:2000.0f,ActiveEffects:[{id:"minecraft:fire_resistance",amplifier:0,duration:-1,show_particles:0b},{id:"minecraft:resistance",amplifier:1,duration:-1,show_particles:0b}]}
+summon evoker 50000 156 50000 {CustomName:'"Kira, Player 1"',CustomNameVisible:1b,PersistenceRequired:1b,Tags:["legendk","minilegends_boss"],attributes:[{id:"minecraft:max_health",base:2000.0}],Health:2000.0f,active_effects:[{id:"minecraft:fire_resistance",amplifier:0,duration:-1,show_particles:0b},{id:"minecraft:resistance",amplifier:1,duration:-1,show_particles:0b}]}
 
 # Setup boss bar (red for danger)
 bossbar add minilegends:legendk {"text":"Kira, Player 1","color":"red","bold":true}

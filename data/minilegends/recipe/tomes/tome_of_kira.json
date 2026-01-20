@@ -1,0 +1,48 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "pattern": [
+        "DED",
+        "EBE",
+        "DED"
+    ],
+    "key": {
+        "D": "minecraft:diamond_block",
+        "E": "minecraft:emerald_block",
+        "B": "minecraft:book"
+    },
+    "result": {
+        "id": "minecraft:book",
+        "components": {
+            "minecraft:item_name": {
+                "text": "Tome of Kira",
+                "color": "dark_purple",
+                "italic": false
+            },
+            "minecraft:lore": [
+                {
+                    "text": "Right-click to summon",
+                    "color": "gray",
+                    "italic": true
+                },
+                {
+                    "text": "Kira, Player 1",
+                    "color": "red",
+                    "italic": false
+                }
+            ],
+            "minecraft:rarity": "epic",
+            "minecraft:enchantment_glint_override": true,
+            "minecraft:custom_data": {
+                "MiniLegendsData": {
+                    "TomeType": "kira"
+                }
+            },
+            "minecraft:consumable": {
+                "consume_seconds": 2147483647,
+                "animation": "none",
+                "has_consume_particles": false
+            }
+        }
+    }
+}

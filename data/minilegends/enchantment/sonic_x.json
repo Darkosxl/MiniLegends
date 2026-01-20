@@ -30,6 +30,6 @@
         "mainhand"
     ],
     "supported_items": "#minilegends:enchantable/sonic_x",
-    "weight": 0,
+    "weight": 1,
     "primary_items": "#minilegends:enchantable/sonic_x"
 }

@@ -52,6 +52,6 @@
         "mainhand"
     ],
     "supported_items": "#minilegends:enchantable/terror_x",
-    "weight": 0,
+    "weight": 1,
     "primary_items": "#minilegends:enchantable/terror_x"
 }

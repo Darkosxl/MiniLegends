@@ -1,0 +1,17 @@
+# ============================================
+# USE TOME OF TERROR
+# ============================================
+
+# Revoke advancement
+advancement revoke @s only minilegends:tomes/use_terror
+
+# Spawn Terror (starts gauntlet)
+execute at @s run function minilegends:bosses/legendt
+
+# Remove tome
+item modify entity @s weapon.mainhand {function:"minecraft:set_count",count:-1,add:true}
+
+# Notification
+tellraw @a {"text":"Darkwarro, TERROR has been summoned...","color":"dark_red","bold":true}
+playsound minecraft:entity.warden.emerge player @a
+playsound minecraft:entity.item.break player @a
