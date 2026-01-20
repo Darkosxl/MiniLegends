@@ -20,7 +20,7 @@ bossbar remove minilegends:legends1
 bossbar remove minilegends:legends2
 
 # 3. Reset Scoreboards/State
-scoreboard players set #terror_phase ml.random 0
+scoreboard players set #terror_phase ml.random -1
 scoreboard players set #terror_kills ml.random 0
 scoreboard players set #terror_startup ml.random 0
 scoreboard players set #kira_level ml.random 0
