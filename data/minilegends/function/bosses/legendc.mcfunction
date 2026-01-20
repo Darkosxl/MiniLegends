@@ -3,6 +3,12 @@
 # 5 Creepers with massive explosion + lava lake
 # ============================================
 
+# Check if another boss is already active
+execute if entity @e[tag=minilegends_boss] run tellraw @a [{"text":"[MiniLegends] ","color":"gold"},{"text":"Another boss is already active!","color":"red"}]
+execute if entity @e[tag=minilegends_boss] run return 0
+execute if entity @e[tag=miniboss] run tellraw @a [{"text":"[MiniLegends] ","color":"gold"},{"text":"Another boss is already active!","color":"red"}]
+execute if entity @e[tag=miniboss] run return 0
+
 # Summon 5 creepers with 5x HP (100) and speed 6
 summon creeper ~ ~ ~ {CustomName:'"Frigis"',CustomNameVisible:1b,PersistenceRequired:1b,Tags:["miniboss","legendc","legendc_primary"],attributes:[{id:"minecraft:max_health",base:100}],active_effects:[{id:"minecraft:speed",amplifier:5,duration:-1,show_particles:false}]}
 execute positioned ~3 ~ ~ run summon creeper ~ ~ ~ {CustomName:'"Frigis"',CustomNameVisible:0b,PersistenceRequired:1b,Tags:["miniboss","legendc"],attributes:[{id:"minecraft:max_health",base:100}],active_effects:[{id:"minecraft:speed",amplifier:5,duration:-1,show_particles:false}]}

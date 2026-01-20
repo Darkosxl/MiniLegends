@@ -5,6 +5,12 @@
 # Phase 2: Lightning storm, wither touch, speed boost
 # ============================================
 
+# Check if another boss is already active
+execute if entity @e[tag=minilegends_boss] run tellraw @a [{"text":"[MiniLegends] ","color":"gold"},{"text":"Another boss is already active!","color":"red"}]
+execute if entity @e[tag=minilegends_boss] run return 0
+execute if entity @e[tag=miniboss] run tellraw @a [{"text":"[MiniLegends] ","color":"gold"},{"text":"Another boss is already active!","color":"red"}]
+execute if entity @e[tag=miniboss] run return 0
+
 # Warning message
 tellraw @a [{"text":"[MiniLegends] ","color":"gold"},{"text":"The experiment has escaped...","color":"dark_purple","italic":true}]
 

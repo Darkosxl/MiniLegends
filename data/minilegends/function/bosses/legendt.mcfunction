@@ -6,6 +6,12 @@
 # Phase 2: Face Darkwarro (4000 HP Warden)
 # ============================================
 
+# Check if another boss is already active
+execute if entity @e[tag=minilegends_boss] run tellraw @a [{"text":"[MiniLegends] ","color":"gold"},{"text":"Another boss is already active!","color":"red"}]
+execute if entity @e[tag=minilegends_boss] run return 0
+execute if entity @e[tag=miniboss] run tellraw @a [{"text":"[MiniLegends] ","color":"gold"},{"text":"Another boss is already active!","color":"red"}]
+execute if entity @e[tag=miniboss] run return 0
+
 # Warning message
 tellraw @a [{"text":"[MiniLegends] ","color":"gold"},{"text":"You have entered the TERROR zone...","color":"dark_red","italic":true}]
 

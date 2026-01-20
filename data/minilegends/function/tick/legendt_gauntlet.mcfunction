@@ -21,4 +21,4 @@ execute unless entity @e[tag=terror_str] if score #terror_kills ml.random matche
 execute unless entity @e[tag=terror_str] if score #terror_kills ml.random matches 2 run scoreboard players set #terror_kills ml.random 3
 
 # All dead - spawn Darkwarro
-execute if score #terror_kills ml.random matches 3 unless entity @e[tag=terror_gauntlet] run function minilegends:bosses/legendt_spawn
+execute if score #terror_kills ml.random matches 3 unless entity @e[tag=terror_gauntlet] if score #terror_phase ml.random matches 0 run function minilegends:bosses/legendt_spawn

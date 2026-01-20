@@ -12,7 +12,11 @@ execute store result bossbar minilegends:legendt value run data get entity @e[ta
 bossbar set minilegends:legendt players @a
 
 # === DEATH CHECK ===
-execute unless entity @e[tag=legendt] if score #terror_phase ml.random matches 1 run function minilegends:tick/legendt_death
+# Countdown startup timer
+execute if score #terror_startup ml.random matches 1.. run scoreboard players remove #terror_startup ml.random 1
+
+# Only check for death if startup is 0
+execute if score #terror_startup ml.random matches 0 unless entity @e[tag=legendt] if score #terror_phase ml.random matches 1 run function minilegends:tick/legendt_death
 
 # === TIMER INCREMENTS ===
 execute if entity @e[tag=legendt] run scoreboard players add #terror_timer ml.random 1

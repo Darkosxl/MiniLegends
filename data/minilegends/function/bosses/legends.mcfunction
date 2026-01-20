@@ -4,6 +4,12 @@
 # Only legends1 has loot table (prevent farming)
 # ============================================
 
+# Check if another boss is already active
+execute if entity @e[tag=minilegends_boss] run tellraw @a [{"text":"[MiniLegends] ","color":"gold"},{"text":"Another boss is already active!","color":"red"}]
+execute if entity @e[tag=minilegends_boss] run return 0
+execute if entity @e[tag=miniboss] run tellraw @a [{"text":"[MiniLegends] ","color":"gold"},{"text":"Another boss is already active!","color":"red"}]
+execute if entity @e[tag=miniboss] run return 0
+
 # Summon Apollon #1 (PRIMARY - has loot table + fire resistance) - 1.21 format
 summon skeleton ~ ~ ~ {CustomName:'"Apollon"',CustomNameVisible:1b,PersistenceRequired:1b,Tags:["miniboss","legends","legends1","legend_primary"],DeathLootTable:"minilegends:legend_drops",attributes:[{id:"minecraft:max_health",base:250},{id:"minecraft:movement_speed",base:0.28}],equipment:{mainhand:{id:"minecraft:bow",count:1,components:{"minecraft:enchantments":{"minecraft:power":15}}},head:{id:"minecraft:netherite_helmet",count:1,components:{"minecraft:enchantments":{"minecraft:projectile_protection":12}}},chest:{id:"minecraft:netherite_chestplate",count:1,components:{"minecraft:enchantments":{"minecraft:projectile_protection":12,"minecraft:thorns":4}}},legs:{id:"minecraft:netherite_leggings",count:1,components:{"minecraft:enchantments":{"minecraft:projectile_protection":12}}},feet:{id:"minecraft:netherite_boots",count:1,components:{"minecraft:enchantments":{"minecraft:protection":7,"minecraft:feather_falling":5}}}},active_effects:[{id:"minecraft:fire_resistance",amplifier:0,duration:-1,show_particles:false}]}
 

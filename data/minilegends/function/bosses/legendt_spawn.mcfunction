@@ -30,5 +30,6 @@ bossbar set minilegends:legendt value 4000
 bossbar set minilegends:legendt players @a
 bossbar set minilegends:legendt visible true
 
-# Initialize timer
+# Initialize timer and startup grace period
 scoreboard players set @e[tag=legendt,limit=1] ml.timer 0
+scoreboard players set #terror_startup ml.random 60

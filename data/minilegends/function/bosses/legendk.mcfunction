@@ -5,6 +5,12 @@
 # 2000 HP, skills at 85%, 70%, 55%, 30%, 2%
 # ============================================
 
+# Check if another boss is already active
+execute if entity @e[tag=minilegends_boss] run tellraw @a [{"text":"[MiniLegends] ","color":"gold"},{"text":"Another boss is already active!","color":"red"}]
+execute if entity @e[tag=minilegends_boss] run return 0
+execute if entity @e[tag=miniboss] run tellraw @a [{"text":"[MiniLegends] ","color":"gold"},{"text":"Another boss is already active!","color":"red"}]
+execute if entity @e[tag=miniboss] run return 0
+
 # Warning message
 tellraw @a [{"text":"[MiniLegends] ","color":"gold"},{"text":"A dark presence materializes...","color":"dark_purple","italic":true}]
 
