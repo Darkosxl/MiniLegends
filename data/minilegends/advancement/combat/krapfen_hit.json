@@ -1,0 +1,18 @@
+{
+    "criteria": {
+        "hurt_by_krapfen": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "source_entity": {
+                        "type": "minecraft:piglin",
+                        "nbt": "{Tags:['legend_krapfen']}"
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "minilegends:combat/krapfen_hit"
+    }
+}

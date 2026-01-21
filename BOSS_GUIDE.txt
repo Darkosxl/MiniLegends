@@ -1,0 +1,85 @@
+================================================================================
+MINILEGENDS BOSS GUIDE
+================================================================================
+
+COMMANDS
+--------------------------------------------------------------------------------
+Admin Give Egg/Tome:  /function minilegends:bosses/give_<boss_name>_tome
+Direct Summon:        /function minilegends:bosses/<boss_name>
+(Note: All bosses use "Tomes" to summon)
+
+================================================================================
+BOSS LIST
+================================================================================
+
+1. KIRA, PLAYER 1 (Legend K)
+   Type: Evoker | HP: 2000
+   Description: A leveling boss with 5 phases. Creates a massive Obsidian Arena at 50,000 / 50,000.
+                Unlocks powerful spell abilities (Fire Gates, Arrow Barrage) as HP drops.
+   Summon Item: Tome of Kira
+   Recipe:
+       [ D ][ E ][ D ]   D = Diamond Block
+       [ E ][ B ][ E ]   E = Emerald Block
+       [ D ][ E ][ D ]   B = Book
+
+2. DARKWARRO, TERROR (Legend T)
+   Type: Warden | HP: 4000
+   Description: The Ultimate Boss. Fighting him is a "Gauntlet" event at -50,000 / -50,000.
+                You must defeat 3 mini-bosses (Apollon, Frigis, STR) before the Warden appears.
+   Summon Item: Tome of Terror
+   Recipe:
+       [ N ][ S ][ N ]   N = Netherite Scrap
+       [ S ][ B ][ S ]   S = Sculk Catalyst
+       [ N ][ S ][ N ]   B = Book
+
+3. KRAPFEN, THE PUNK
+   Type: Piglin | HP: 300
+   Description: A greedy punk with full enchanted Gold Armor and a Reach 11 sword.
+                Steals your armor on hit (40% chance) and summons 10 helper piglins every 20% HP.
+   Summon Item: Tome of Krapfen
+   Recipe:
+       [ G ][ P ][ G ]   G = Gold Block
+       [ P ][ E ][ P ]   P = Porkchop
+       [ G ][ H ][ G ]   E = Emerald Block, H = Piglin Head
+
+4. FRIGIS, THE NUCLEAR (Legend C)
+   Type: Charged Creeper (x5) | HP: 100 each
+   Description: A swarm of 5 hyper-fast Charged Creepers with Speed VI.
+                They create massive explosions and spawn lava lakes on death.
+   Summon Item: Tome of C
+   Recipe:
+       [ E ][ E ][ E ]   E = Emerald
+       [ D ][ C ][ D ]   D = Diamond, C = Creeper Head
+       [ T ][ T ][ T ]   T = TNT
+
+5. STR, THE EXPERIMENT (Legend E)
+   Type: Giant Enderman + Skeleton Rider | HP: 500 + 1000
+   Description: A two-part boss. The rider (Hollow Rider) has high HP and ranged attacks.
+                Uses "Sand Coffin" to trap players in walls and summons lightning storms.
+   Summon Item: Tome of STR
+   Recipe:
+       [ E ][ P ][ E ]   E = End Stone Bricks
+       [ P ][ B ][ P ]   P = Ender Eye
+       [ E ][ P ][ E ]   B = Book
+
+6. APOLLON, THE RUIN (Legend S)
+   Type: Skeleton (x2) | HP: 250 each
+   Description: A duo of skeletons with Power XV bows and explosive arrows.
+                They wear heavy Netherite armor (Prot XII) and create lava rings.
+   Summon Item: Tome of Apollon
+   Recipe:
+       [ T ][ T ][ T ]   T = TNT
+       [ I ][ S ][ I ]   I = Iron Block, S = Skeleton Skull
+       [ B ][ D ][ B ]   B = Bow, D = Diamond Block
+
+7. REIN, THE GESTALT (Legend Z)
+   Type: Zombie | HP: 375
+   Description: A powerful zombie warrior with Netherite gear.
+                Summons a circle of 10 "Mini S" zombie minions to aid him in battle.
+   Summon Item: Tome of reiN
+   Recipe:
+       [ R ][ R ][ R ]   R = Rotten Flesh
+       [ E ][ Z ][ E ]   E = Emerald Block, Z = Zombie Head
+       [ S ][ D ][ S ]   S = Diamond Sword, D = Diamond Block
+
+================================================================================

@@ -1,0 +1,2 @@
+# Give Krapfen Tome
+give @s minecraft:book[minecraft:item_name='{"text":"Tome of Krapfen","color":"gold","italic":false}',minecraft:lore=['{"text":"Right-click to summon","color":"gray","italic":true}','{"text":"Krapfen, The Punk","color":"gold","italic":false}'],minecraft:rarity="epic",minecraft:enchantment_glint_override=true,minecraft:custom_data={MiniLegendsData:{TomeType:"krapfen"}},minecraft:consumable={consume_seconds:2147483647,animation:"none",has_consume_particles:false}] 1

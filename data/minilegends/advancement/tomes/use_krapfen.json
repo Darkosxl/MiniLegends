@@ -1,0 +1,21 @@
+{
+    "criteria": {
+        "use_tome": {
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                "item": {
+                    "predicates": {
+                        "minecraft:custom_data": {
+                            "MiniLegendsData": {
+                                "TomeType": "krapfen"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "minilegends:tomes/use_krapfen"
+    }
+}

@@ -1,0 +1,59 @@
+============================================
+LEGEND KRAPFEN - THE PUNK
+============================================
+
+INTERNAL ID: krapfen (Tag: legend_krapfen)
+DISPLAY NAME: Krapfen, The Punk
+
+--- COMMANDS ---
+
+1. GET SPAWN TOME (Admin):
+   /function minilegends:bosses/give_krapfen_tome
+
+2. SUMMON DIRECTLY (Admin):
+   /function minilegends:bosses/krapfen
+
+--- RECIPE ---
+Crafting Table (Shaped):
+G = Gold Block
+P = Porkchop
+E = Emerald Block
+H = Piglin Head
+
+[ G ][ P ][ G ]
+[ P ][ E ][ P ]
+[ G ][ H ][ G ]
+
+Result: 1x Tome of Krapfen
+
+--- BOSS STATS ---
+Type: Piglin
+HP: 300
+Armor: Full Golden Armor (Protection 10)
+Weapon: "Kingslayer" (Sharpness X, Fire Aspect III, Reach 11)
+
+--- ABILITIES ---
+
+1. KING STEALER (Passive)
+   - 40% chance on hit to steal one piece of the player's armor.
+   - The armor is removed from the player and dropped on the ground.
+
+2. DECAYING (Passive)
+   - Inflicts Wither VIII for 2 seconds on every hit.
+
+3. PIGLIN SWARM (Phase)
+   - Summons 10 helper Piglins every 20% HP loss (at 240, 180, 120, 60 HP).
+   - Helper Stats:
+     - Weapon: Golden Sword (Sharpness 8, Knockback 7, Fire Aspect 2, Reach 15)
+     - Armor: Golden Helmet (Projectile Protection 10)
+
+--- FILES ---
+Spawn Logic: data/minilegends/function/bosses/krapfen.mcfunction
+Tick Logic:  data/minilegends/function/tick/krapfen.mcfunction
+Abilities:   data/minilegends/function/combat/krapfen_hit.mcfunction
+             data/minilegends/function/combat/krapfen_steal_armor.mcfunction
+             data/minilegends/function/tick/krapfen_swarm.mcfunction
+Advancement: data/minilegends/advancement/combat/krapfen_hit.json
+Recipe:      data/minilegends/recipe/tomes/tome_of_krapfen.json
+
+============================================
