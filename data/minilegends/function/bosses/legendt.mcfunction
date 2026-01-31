@@ -22,7 +22,7 @@ execute positioned -50000 140 -50000 run function minilegends:bosses/legendt_are
 tp @a -50000 156 -50000
 
 # Setup boss bar for gauntlet phase
-bossbar add minilegends:legendt_gauntlet {"text":"GAUNTLET - Defeat the Legends","color":"purple","bold":true}
+bossbar add minilegends:legendt_gauntlet {"text":"GAUNTLET - Defeat the Legends","color":"dark_purple","bold":true}
 bossbar set minilegends:legendt_gauntlet color purple
 bossbar set minilegends:legendt_gauntlet max 3
 bossbar set minilegends:legendt_gauntlet value 3

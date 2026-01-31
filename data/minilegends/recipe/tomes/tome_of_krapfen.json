@@ -7,18 +7,10 @@
         "GHG"
     ],
     "key": {
-        "G": {
-            "item": "minecraft:gold_block"
-        },
-        "P": {
-            "item": "minecraft:porkchop"
-        },
-        "E": {
-            "item": "minecraft:emerald_block"
-        },
-        "H": {
-            "item": "minecraft:piglin_head"
-        }
+        "G": "minecraft:gold_block",
+        "P": "minecraft:porkchop",
+        "E": "minecraft:emerald_block",
+        "H": "minecraft:piglin_head"
     },
     "result": {
         "id": "minecraft:book",

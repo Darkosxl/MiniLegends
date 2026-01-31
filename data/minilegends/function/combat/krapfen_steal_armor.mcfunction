@@ -5,7 +5,7 @@ scoreboard players set #armor_slot ml.random 0
 execute store result score #armor_slot ml.random run random value 1..4
 
 # Drop Helmet
-execute if score #armor_slot ml.random matches 1 run item replace entity @s armor.head with minecraft:air return
+execute if score #armor_slot ml.random matches 1 unless data entity @s Inventory[{Slot:103b}] run return 0
 # If slot was empty or logic continued (unlikely with return but just in case of future edits), dropping logic:
 # Actually 'item replace ... with air' deletes it. The user said "drop pieces of their armour".
 # So we should probably spawn the item at the player's location before clearing it.

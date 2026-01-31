@@ -5,7 +5,7 @@
 # ============================================
 
 # Warning message
-tellraw @a [{\"text\":\"[\",\"color\":\"dark_gray\"},{\"text\":\"Darkwarro\",\"color\":\"dark_red\"},{\"text\":\"] \",\"color\":\"dark_gray\"},{\"text\":\"ASCEND!\",\"color\":\"red\",\"bold\":true}]
+tellraw @a [{"text":"[","color":"dark_gray"},{"text":"Darkwarro","color":"dark_red"},{"text":"] ","color":"dark_gray"},{"text":"ASCEND!","color":"red","bold":true}]
 
 # Warden roar sound
 playsound minecraft:entity.warden.roar master @a ~ ~ ~ 2 0.6
