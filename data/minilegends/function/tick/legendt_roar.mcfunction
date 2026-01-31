@@ -22,7 +22,7 @@ execute as @a at @e[tag=legendt,limit=1] run spreadplayers ~ ~ 2 4 false @s
 effect give @a slowness 3 2 false
 
 # Damage from the pull (5 hearts)
-damage @a 10 minecraft:sonic_boom
+execute as @a run damage @s 10 minecraft:sonic_boom
 
 # Darkwarro laughs
 execute as @e[tag=legendt] at @s run playsound minecraft:entity.warden.listening_angry master @a ~ ~ ~ 2 0.7

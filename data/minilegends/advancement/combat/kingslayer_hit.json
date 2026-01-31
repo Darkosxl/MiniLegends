@@ -1,7 +1,7 @@
 {
     "criteria": {
-        "requirement": {
-            "trigger": "minecraft:using_item",
+        "hit_with_kingslayer": {
+            "trigger": "minecraft:player_hurt_entity",
             "conditions": {
                 "player": [
                     {
@@ -11,22 +11,17 @@
                             "equipment": {
                                 "mainhand": {
                                     "predicates": {
-                                        "minecraft:custom_data": "{MiniLegendsData:{TomeType:\"krapfen\"}}"
+                                        "minecraft:custom_data": "{MiniLegendsData:{KingStealer:1}}"
                                     }
                                 }
                             }
                         }
                     }
-                ],
-                "item": {
-                    "predicates": {
-                        "minecraft:custom_data": "{MiniLegendsData:{TomeType:\"krapfen\"}}"
-                    }
-                }
+                ]
             }
         }
     },
     "rewards": {
-        "function": "minilegends:tomes/use_krapfen"
+        "function": "minilegends:combat/kingslayer_hit"
     }
 }

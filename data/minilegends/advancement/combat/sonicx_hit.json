@@ -1,7 +1,7 @@
 {
     "criteria": {
-        "requirement": {
-            "trigger": "minecraft:using_item",
+        "hit_with_fury": {
+            "trigger": "minecraft:player_hurt_entity",
             "conditions": {
                 "player": [
                     {
@@ -11,22 +11,21 @@
                             "equipment": {
                                 "mainhand": {
                                     "predicates": {
-                                        "minecraft:custom_data": "{MiniLegendsData:{TomeType:\"krapfen\"}}"
+                                        "minecraft:enchantments": [
+                                            {
+                                                "enchantments": "minilegends:sonic_x"
+                                            }
+                                        ]
                                     }
                                 }
                             }
                         }
                     }
-                ],
-                "item": {
-                    "predicates": {
-                        "minecraft:custom_data": "{MiniLegendsData:{TomeType:\"krapfen\"}}"
-                    }
-                }
+                ]
             }
         }
     },
     "rewards": {
-        "function": "minilegends:tomes/use_krapfen"
+        "function": "minilegends:enchantments/sonic_x/hit"
     }
 }
