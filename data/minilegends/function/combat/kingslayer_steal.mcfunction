@@ -27,15 +27,18 @@ execute if score #steal_slot ml.random matches 4 run item replace entity @s armo
 execute if score #steal_slot ml.random matches 5 run item replace entity @s weapon.mainhand with minecraft:air
 execute if score #steal_slot ml.random matches 6 run item replace entity @s weapon.offhand with minecraft:air
 
+# Check if something was actually stolen (item is NOT stone)
+# Tag successful steals
+execute as @e[type=item,tag=stolen_equip] unless data entity @s {Item:{id:"minecraft:stone"}} run tag @s add steal_success
+
 # Kill the item entity if it still has stone (empty slot was selected)
-execute as @e[type=item,tag=stolen_equip,nbt={Item:{id:"minecraft:stone"}}] run kill @s
+kill @e[type=item,tag=stolen_equip,nbt={Item:{id:"minecraft:stone"}}]
 
-# Remove temp tag from the item (so it becomes normal loot)
+# Only show message and effects if something was actually stolen
+execute if entity @e[type=item,tag=steal_success] run particle minecraft:crit ~ ~1 ~ 0.5 0.5 0.5 0.1 20
+execute if entity @e[type=item,tag=steal_success] run playsound minecraft:entity.item.break master @a ~ ~ ~ 1 0.8
+execute if entity @e[type=item,tag=steal_success] as @a[distance=..20] run tellraw @s [{"text":"[Kingslayer] ","color":"gold"},{"text":"Equipment stolen!","color":"yellow"}]
+
+# Remove temp tags from items
 tag @e[type=item,tag=stolen_equip] remove stolen_equip
-
-# Visual and sound effect
-particle minecraft:crit ~ ~1 ~ 0.5 0.5 0.5 0.1 20
-playsound minecraft:entity.item.break master @a ~ ~ ~ 1 0.8
-
-# Message to nearby players
-execute as @a[distance=..20] run tellraw @s [{"text":"[Kingslayer] ","color":"gold"},{"text":"Equipment stolen!","color":"yellow"}]
+tag @e[type=item,tag=steal_success] remove steal_success

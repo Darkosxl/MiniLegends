@@ -9,9 +9,10 @@ execute store result bossbar minilegends:krapfen value run data get entity @e[ta
 bossbar set minilegends:krapfen players @a
 
 # === DEATH CHECK ===
-execute unless entity @e[tag=legend_krapfen] if score #krapfen_phase ml.random matches 0.. run function minilegends:tick/krapfen_death
-execute unless entity @e[tag=legend_krapfen] run bossbar remove minilegends:krapfen
-execute unless entity @e[tag=legend_krapfen] run scoreboard players set #krapfen_phase ml.random -1
+# Only run death if Krapfen died (not if he never spawned)
+execute unless entity @e[tag=legend_krapfen] if score #krapfen_phase ml.random matches 0..4 run function minilegends:tick/krapfen_death
+execute unless entity @e[tag=legend_krapfen] if score #krapfen_phase ml.random matches 0..4 run bossbar remove minilegends:krapfen
+execute unless entity @e[tag=legend_krapfen] if score #krapfen_phase ml.random matches 0..4 run scoreboard players set #krapfen_phase ml.random -1
 
 # === TIMER INCREMENT ===
 execute as @e[tag=legend_krapfen] run scoreboard players add @s ml.timer 1

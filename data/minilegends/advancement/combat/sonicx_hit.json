@@ -11,11 +11,7 @@
                             "equipment": {
                                 "mainhand": {
                                     "predicates": {
-                                        "minecraft:enchantments": [
-                                            {
-                                                "enchantments": "minilegends:sonic_x"
-                                            }
-                                        ]
+                                        "minecraft:custom_data": "{SonicX:1}"
                                     }
                                 }
                             }

@@ -19,8 +19,8 @@ execute positioned -50000 150 -50000 run summon experience_orb ~ ~ ~ {Value:1000
 execute positioned -50000 150 -50000 run summon experience_orb ~ ~ ~ {Value:10000}
 execute positioned -50000 150 -50000 run summon experience_orb ~ ~ ~ {Value:10000}
 
-# Spawn reward chest with Sonic X sword
-setblock -50000 146 -50000 chest{CustomName:'{"text":"TERROR VANQUISHED","color":"dark_red","bold":true}',Items:[{Slot:13b,id:"minecraft:netherite_sword",count:1,components:{"minecraft:custom_name":'{"text":"Darkwarros Fury","color":"dark_aqua","bold":true}',"minecraft:enchantments":{"minilegends:sonic_x":1},"minecraft:lore":['{"text":"The blade of the fallen TERROR","color":"gray","italic":true}','{"text":"Every strike echoes with destruction","color":"dark_aqua"}']}}]}
+# Spawn reward chest with Sonic X sword (has SonicX:1 custom_data for advancement detection)
+setblock -50000 146 -50000 chest{CustomName:'{"text":"TERROR VANQUISHED","color":"dark_red","bold":true}',Items:[{Slot:13b,id:"minecraft:netherite_sword",count:1,components:{"minecraft:custom_name":'{"text":"Darkwarros Fury","color":"dark_aqua","bold":true}',"minecraft:enchantments":{"minilegends:sonic_x":1},"minecraft:custom_data":{SonicX:1},"minecraft:lore":['"§7The blade of the fallen TERROR"','"§3Every strike echoes with destruction"']}}]}
 
 # Particles at reward chest
 execute positioned -50000 146 -50000 run particle minecraft:totem_of_undying ~ ~1 ~ 1 1 1 0.3 200

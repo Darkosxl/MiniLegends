@@ -1,0 +1,24 @@
+{
+    "anvil_cost": 10,
+    "description": {
+        "text": "King Stealer",
+        "color": "gold",
+        "bold": true
+    },
+    "effects": {},
+    "max_cost": {
+        "base": 100,
+        "per_level_above_first": 50
+    },
+    "max_level": 1,
+    "min_cost": {
+        "base": 50,
+        "per_level_above_first": 50
+    },
+    "slots": [
+        "mainhand"
+    ],
+    "supported_items": "#minecraft:swords",
+    "weight": 1,
+    "primary_items": "#minecraft:swords"
+}
